@@ -1,0 +1,15 @@
+[package]
+name = "robot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+teloxide = { version = "0.10", features = ["macros", "auto-send"] }
+log = "0.4"
+pretty_env_logger = "0.4"
+tokio = { version =  "1.8", features = ["rt-multi-thread", "macros"] }
+once_cell = "1.13.0"
+
+starcoin-rpc-client = { git = "https://github.com/starcoinorg/starcoin", rev = "f1e4fb2e2cb7e9d23116a5553af265053ac040ea"}
